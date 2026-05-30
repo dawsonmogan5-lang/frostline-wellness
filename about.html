@@ -1,0 +1,262 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Meta description.">
+  <title>About Us â€” Frostline Wellness</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css">
+</head>
+<body>
+
+  <div class="announcement-bar">
+    <p>Free shipping on all orders over $X &nbsp;|&nbsp; Serving Idaho &amp; Utah</p>
+  </div>
+
+  <header class="site-header" id="siteHeader">
+    <nav class="nav-container">
+      <a href="index.html" class="nav-logo">Frostline Wellness</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li class="nav-dropdown">
+          <a href="cold-plunge.html">Products</a>
+          <ul class="nav-dropdown-menu">
+            <li><a href="residential.html">Residential</a></li>
+            <li><a href="commercial.html">Commercial</a></li>
+            <li><a href="cold-plunge.html">All Products</a></li>
+          </ul>
+        </li>
+        <li><a href="about.html" class="nav-active">About Us</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="cold-plunge.html" class="btn btn-accent">Shop Now</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="cold-plunge.html">Products</a></li>
+        <li class="mobile-sub"><a href="residential.html">Residential</a></li>
+        <li class="mobile-sub"><a href="commercial.html">Commercial</a></li>
+        <li class="mobile-sub"><a href="cold-plunge.html">All Products</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="mobile-menu-actions">
+        <a href="cold-plunge.html" class="btn btn-accent">Shop Now</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- PAGE HEADER -->
+    <div class="page-header-simple dark-section">
+      <div class="container">
+        <nav class="breadcrumb breadcrumb-light" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span>&rsaquo;</span>
+          <span>About</span>
+        </nav>
+        <h1>About Us</h1>
+        <p>Idaho &amp; Utah's trusted source for premium cold plunge systems.</p>
+      </div>
+    </div>
+
+    <!-- BRAND STORY -->
+    <section class="section brand-story">
+      <div class="container">
+        <div class="brand-story-grid">
+          <div class="brand-story-text">
+            <span class="section-label">Who We Are</span>
+            <h2>Our Story</h2>
+            <p>Frostline Wellness is Idaho and Utah's trusted source for premium cold plunge systems. As an authorized Plunge Zero dealer, we help homeowners, athletes, wellness facilities, gyms, and recovery centers bring professional-grade cold therapy into their daily routines.</p>
+            <p>Based in Mountain Home, Idaho, we're passionate about helping people improve recovery, resilience, energy, and overall well-being through cold water immersion. We partner with Plunge Zero because their systems combine powerful cooling, advanced filtration, automatic ozone sanitation, and simple plug-and-play operation into one streamlined package.</p>
+            <p>Our focus is simple: provide exceptional products, honest guidance, and local support you can count on.</p>
+          </div>
+          <div class="brand-story-img">
+            <div class="img-placeholder" style="aspect-ratio:3/4;padding:0;overflow:hidden;"><img src="project%20media/residential-saunaskin-hardtop-indoor-setup.png" alt="SaunaSkin cold plunge indoor setup" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICE AREA -->
+    <section class=”section dark-section service-area-section”>
+      <div class=”container”>
+        <div class=”service-area-grid”>
+          <div class=”service-area-text”>
+            <span class=”section-label light”>Where We Serve</span>
+            <h2>Service Area &mdash; Idaho &amp; Utah</h2>
+            <p>We proudly serve customers throughout Idaho and Utah, delivering PlungeZero cold plunge systems to all home and business addresses through the two states.</p>
+            <p>Based in Mountain Home, Idaho, we're perfectly positioned to serve both states and possess local knowledge of the areas. Have questions about delivery or setup in your area? Reach out, we're happy to help.</p>
+            <ul class=”service-area-list”>
+              <li>Boise &amp; Treasure Valley</li>
+              <li>Twin Falls &amp; Magic Valley</li>
+              <li>Idaho Falls &amp; Eastern Idaho</li>
+              <li>Pocatello &amp; Southeastern Idaho</li>
+              <li>Salt Lake City &amp; Wasatch Front</li>
+              <li>Provo, Orem &amp; Utah Valley</li>
+              <li>St. George &amp; Southern Utah</li>
+              <li>And all surrounding areas</li>
+            </ul>
+            <a href=”contact.html” class=”btn btn-outline-light”>Contact Us</a>
+          </div>
+          <div class=”service-area-map”>
+            <div id=”serviceAreaMap” style=”width:100%;height:420px;border-radius:10px;overflow:hidden;”></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section class=”section dark-section why-us”>
+      <div class=”container”>
+        <span class=”section-label light”>Our Difference</span>
+        <h2>Why Choose Us</h2>
+        <div class=”why-us-grid”>
+
+          <div class=”why-card reveal-item”>
+            <div class=”why-icon”><svg width=”28” height=”28” viewBox=”0 0 24 24” fill=”none” stroke=”currentColor” stroke-width=”1.5” stroke-linecap=”round” stroke-linejoin=”round”><path d=”M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z”/></svg></div>
+            <h3>Authorized Dealer</h3>
+            <p>We're an officially authorized PlungeZero dealer, so you get the real thing &mdash; backed by manufacturer warranties and full product support.</p>
+          </div>
+
+          <div class=”why-card reveal-item”>
+            <div class=”why-icon”><svg width=”28” height=”28” viewBox=”0 0 24 24” fill=”none” stroke=”currentColor” stroke-width=”1.5” stroke-linecap=”round” stroke-linejoin=”round”><path d=”M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z”/><circle cx=”12” cy=”10” r=”3”/></svg></div>
+            <h3>Local Idaho &amp; Utah Service</h3>
+            <p>Based in Mountain Home, Idaho, we serve our region personally. You'll work with real people who know your area &mdash; not a distant call center.</p>
+          </div>
+
+          <div class=”why-card reveal-item”>
+            <div class=”why-icon”><svg width=”28” height=”28” viewBox=”0 0 24 24” fill=”none” stroke=”currentColor” stroke-width=”1.5” stroke-linecap=”round” stroke-linejoin=”round”><rect x=”1” y=”3” width=”15” height=”13” rx=”1”/><path d=”M16 8h4l3 5v3h-7V8z”/><circle cx=”5.5” cy=”18.5” r=”2.5”/><circle cx=”18.5” cy=”18.5” r=”2.5”/></svg></div>
+            <h3>Free Shipping Included</h3>
+            <p>Every PlungeZero system ships free to your door throughout Idaho and Utah. No hidden freight charges or surprise fees at checkout.</p>
+          </div>
+
+          <div class=”why-card reveal-item”>
+            <div class=”why-icon”><svg width=”28” height=”28” viewBox=”0 0 24 24” fill=”none” stroke=”currentColor” stroke-width=”1.5” stroke-linecap=”round” stroke-linejoin=”round”><circle cx=”12” cy=”12” r=”10”/><path d=”M12 16v-4”/><path d=”M12 8h.01”/></svg></div>
+            <h3>Expert Guidance</h3>
+            <p>Not sure which system is right for you? We'll walk you through the options, answer your questions, and make sure you get exactly what fits your space and goals.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BANNER -->
+    <section class="cta-banner">
+      <div class="container">
+        <h2>Get in Touch</h2>
+        <div class="cta-banner-actions">
+          <a href="contact.html" class="btn btn-outline-light btn-large">Get in Touch</a>
+          <a href="cold-plunge.html" class="btn btn-primary btn-large">Shop Products</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">Frostline Wellness</div>
+          <p>Idaho &amp; Utah's Premier Cold Plunge Dealer</p>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/frostline.wellness" class="social-link" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>`n            <p class="footer-social-incentive">Follow us on Instagram for new product announcements, updates, and offers.</p>`n          </div>
+        </div>
+        <div class="footer-nav">
+          <h4>Products</h4>
+          <ul>
+            <li><a href="residential.html">Residential</a></li>
+            <li><a href="commercial.html">Commercial</a></li>
+            <li><a href="cold-plunge.html">All Products</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav">
+          <h4>Policies</h4>
+          <ul>
+            <li><a href="warranty.html">Warranty</a></li>
+            <li><a href="terms-of-sale.html">Terms of Sale</a></li>
+            <li><a href="product-notice.html">Product Notice</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p class="footer-contact-item"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.72 16z"/></svg><a href="tel:2088188071">(208) 818-8071</a></p>
+          <p class="footer-contact-item"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><a href="mailto:frostline.wellness@gmail.com">frostline.wellness@gmail.com</a></p>
+          <p class="footer-contact-item footer-contact-address"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>1825 S 10th E<br>Mountain Home, ID 83647</span></p>
+          <a href="contact.html" class="btn btn-outline-light" style="margin-top:16px; display:inline-block;">Get a Free Consult</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; 2026 Frostline Wellness. All rights reserved. Authorized Plunge Zero Dealer.</p>
+        <div class="footer-bottom-links">
+          <a href="terms-of-sale.html">Terms of Sale</a>
+          <a href="product-notice.html">Product Notice</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script>
+    (function () {
+      var mapEl = document.getElementById('serviceAreaMap');
+      if (!mapEl) return;
+      var map = L.map('serviceAreaMap', { zoomControl: false, dragging: false, scrollWheelZoom: false, doubleClickZoom: false, touchZoom: false, keyboard: false });
+      L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/">CARTO</a>',
+        subdomains: 'abcd', maxZoom: 19
+      }).addTo(map);
+      var style = { color: '#1d4ed8', weight: 2, fillColor: '#3b82f6', fillOpacity: 0.3, opacity: 0.9 };
+      var idahoRing = [
+        [49.0006, -117.0415], [49.0006, -116.0490],
+        [47.9760, -116.0490], [47.4600, -115.9800],
+        [46.5432, -116.0490], [46.6400, -114.5700],
+        [45.7000, -113.9400], [45.0000, -112.8000],
+        [44.5259, -111.0465], [42.0002, -111.0465],
+        [42.0002, -114.0418], [42.0002, -117.0264],
+        [44.3957, -117.0415], [45.4589, -116.5413],
+        [45.7399, -116.5413], [45.8242, -116.7338],
+        [45.9961, -117.0323], [46.5432, -117.0264],
+        [49.0006, -117.0415]
+      ];
+      var utahRing = [
+        [42.0002, -114.0516], [42.0002, -111.0465],
+        [40.9977, -111.0465], [40.9977, -109.0502],
+        [37.0002, -109.0502], [37.0002, -114.0516],
+        [42.0002, -114.0516]
+      ];
+      var idahoLayer = L.polygon(idahoRing, style).addTo(map);
+      var utahLayer  = L.polygon(utahRing,  style).addTo(map);
+      map.fitBounds(idahoLayer.getBounds().extend(utahLayer.getBounds()), { padding: [28, 28] });
+    })();
+  </script>
+</body>
+</html>
