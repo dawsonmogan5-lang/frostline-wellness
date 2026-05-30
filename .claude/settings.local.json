@@ -1,7 +1,23 @@
 {
   "permissions": {
     "allow": [
-      "PowerShell($jsonl = \"C:\\\\Users\\\\Administrator\\\\.claude\\\\projects\\\\c--Users-Administrator-Desktop-Frostline-Wellness\\\\015056e1-60ce-43d3-bc3b-f9ea60e36c8c.jsonl\"; $raw = Get-Content $jsonl -Raw; $titles = @\\(\"Frostline Wellness — Frostline\", \"About Us\", \"residential\", \"commercial\", \"Cold Plunge\", \"FAQ\", \"Contact\", \"Blog\", \"warranty\", \"terms-of-sale\", \"product-notice\"\\); foreach \\($t in $titles\\) { $idx = $raw.LastIndexOf\\($t\\); if \\($idx -ge 0\\) { Write-Host \"$t at $idx\" } })"
+      "PowerShell($jsonl = \"C:\\\\Users\\\\Administrator\\\\.claude\\\\projects\\\\c--Users-Administrator-Desktop-Frostline-Wellness\\\\015056e1-60ce-43d3-bc3b-f9ea60e36c8c.jsonl\"; $raw = Get-Content $jsonl -Raw; $titles = @\\(\"Frostline Wellness — Frostline\", \"About Us\", \"residential\", \"commercial\", \"Cold Plunge\", \"FAQ\", \"Contact\", \"Blog\", \"warranty\", \"terms-of-sale\", \"product-notice\"\\); foreach \\($t in $titles\\) { $idx = $raw.LastIndexOf\\($t\\); if \\($idx -ge 0\\) { Write-Host \"$t at $idx\" } })",
+      "Bash(git *)"
+    ]
+  },
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "shell": "powershell",
+            "command": "Set-Location \"C:\\Users\\Administrator\\Desktop\\Frostline Wellness\"; $s = git status --porcelain; if ($s) { git add .; git commit -m \"Auto-backup $(Get-Date -Format 'yyyy-MM-dd HH:mm')\"; git push origin master }",
+            "timeout": 60,
+            "statusMessage": "Pushing to GitHub..."
+          }
+        ]
+      }
     ]
   }
 }
