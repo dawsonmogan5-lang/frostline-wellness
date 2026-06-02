@@ -1427,6 +1427,9 @@ h2 {
 
   .hero-ctas .btn { width: 100%; }
 
+  .trust-bar-inner { flex-direction: column; gap: 16px; }
+  .trust-item { justify-content: center; }
+
   .footer-grid { grid-template-columns: 1fr; }
   .trust-item { font-size: 11px; }
   .categories-grid,
