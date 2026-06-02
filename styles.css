@@ -367,7 +367,7 @@ h2 {
 
 .hero h1 {
   font-family: var(--font-display);
-  font-size: clamp(64px, 10vw, 120px);
+  font-size: clamp(42px, 10vw, 120px);
   font-weight: 900;
   line-height: 0.95;
   text-transform: uppercase;
@@ -1367,6 +1367,8 @@ h2 {
 @media (max-width: 768px) {
   :root { --section-v: 60px; }
 
+  .hero-content { padding: 60px 20px; }
+
   .nav-links,
   .nav-actions { display: none; }
   .hamburger { display: flex; }
@@ -1423,13 +1425,14 @@ h2 {
 
   .announcement-bar p { font-size: 12px; }
 
+  .hero-ctas .btn { width: 100%; }
+
   .footer-grid { grid-template-columns: 1fr; }
   .trust-item { font-size: 11px; }
   .categories-grid,
   .products-grid,
   .blog-grid,
   .testimonials-grid { gap: 12px; }
-  .hero-content { padding: 60px 20px; }
 }
 
 /* ============================================================
