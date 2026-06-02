@@ -237,6 +237,15 @@ h2 {
   text-transform: uppercase;
   color: var(--white);
   flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-logo img {
+  height: 30px;
+  width: auto;
+  display: block;
 }
 
 .nav-links {
@@ -908,6 +917,15 @@ h2 {
   text-transform: uppercase;
   color: var(--white);
   margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-logo img {
+  height: 26px;
+  width: auto;
+  display: block;
 }
 
 .footer-brand > p {
