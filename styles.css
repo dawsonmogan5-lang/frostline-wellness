@@ -1159,7 +1159,7 @@ h2 {
   text-decoration: none;
 }
 .footer-contact-item a:hover {
-  text-decoration: underline;
+  color: var(--white);
 }
 
 /* ---- CONTACT INFO LIST LINKS ------------------------------ */
@@ -2344,13 +2344,13 @@ h2 {
 
 .nav-dropdown-menu {
   position: absolute;
-  top: calc(100% + 10px);
+  top: 100%;
   left: 0;
   background: var(--near-black);
   border: 0.5px solid var(--border-faint);
   border-radius: var(--radius);
   min-width: 160px;
-  padding: 6px 0;
+  padding: 10px 0 6px;
   list-style: none;
   opacity: 0;
   visibility: hidden;
